@@ -3,6 +3,7 @@
 		<div class="task">
 			<p style="opacity: 0.4;"><strike><%= link_to task.title, task %></strike></p>
 			<p><%= task.deadline %></p>
+			<p><%= render task.tags %></p>
 		</div>
 		<div class="complete">
 			<%= link_to complete_task_path(task), method: :patch do %>
@@ -18,6 +19,7 @@
 		<div class="task">
 			<p><%= link_to task.title, task %></p>
 			<p><%= task.deadline %></p>
+			<p><%= render task.tags %></p>
 		</div>
 		<div class="complete">
 			<%= link_to complete_task_path(task), method: :patch do %>
