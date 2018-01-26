@@ -21,7 +21,10 @@
     <%= form.datetime_select :deadline, id: :task_deadline %>
   </div>
 
-  <%= form.text_field :tag_list, value: form.object.tag_list.to_s %>
+  <div class="field">
+    <%= form.label :tags %>
+    <%= form.text_field :tag_list, value: form.object.tag_list.to_s %>
+  </div>
 
   <div class="actions">
     <%= form.submit %>
