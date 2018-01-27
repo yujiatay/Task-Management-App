@@ -2,14 +2,9 @@
 
 <h2 class="task_title"><%= @task.title %></h2>
 
-<p>
-  <strong>Deadline:</strong>
-  <%= @task.deadline %></p>
+<p>Deadline: <%= @task.deadline %></p>
 
-<p>
-  <strong>Tags:</strong>
-  <%= render @task.tags %>
-</p>
+<p>Tags: <%= render @task.tags %></p>
 
 <div class="links">
 <%= link_to 'Edit', edit_task_path(@task) %> |
