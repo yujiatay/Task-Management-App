@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @task.title %>
-</p>
+<h2 class="task_title"><%= @task.title %></h2>
 
 <p>
   <strong>Deadline:</strong>
-  <%= @task.deadline %>
-</p>
+  <%= @task.deadline %></p>
 
 <p>
   <strong>Tags:</strong>
   <%= render @task.tags %>
 </p>
 
+<div class="links">
 <%= link_to 'Edit', edit_task_path(@task) %> |
 <%= link_to 'Back', tasks_path %>
+</div>

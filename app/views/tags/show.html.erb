@@ -1,2 +1,7 @@
-<h1><%= @tag.name %></h1>
-<div><%= render @tasks %></div>
+<h1 class="task_title"><%= @tag.name %></h1>
+<div id="tasks_wrapper">
+  <%= render @tasks %>
+</div>
+<div class="links">
+	<%= link_to 'Back', tasks_path %>
+</div>

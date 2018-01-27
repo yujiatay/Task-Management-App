@@ -25,11 +25,51 @@ html {
 }
 
 body {
- 	height: 100%;
- 	background-color: #FFE53B;
-	background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 25%);
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
-  font-family: 'Lato', sans-serif;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	font-family: 'Lato', sans-serif;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 .clearfix:before,
@@ -68,6 +108,23 @@ body {
 	}
 }
 
+.task_title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: white;
+	margin: 0;
+	a {
+		text-decoration: none;
+		color: white;
+		transition: all .4s ease-in-out;
+		&:hover {
+			opacity: 0.4;
+		}
+	}
+}
+
 #tasks_wrapper {
 	.row {
 		width: 100%;
@@ -85,8 +142,8 @@ body {
 			float: left;
 			p {
 				margin: 0;
-				padding: 1em;
-				color: $dark;
+				padding: 0.5em;
+				color: #fff;
 				font-weight: 100;
 			}
 		}
