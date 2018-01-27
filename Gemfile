@@ -52,7 +52,8 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '1.0.0'
+  gem 'pg', '~> 0.20'
+  gem 'rails_12factor'
 end
 
 gem 'acts-as-taggable-on'
