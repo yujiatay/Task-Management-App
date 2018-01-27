@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180126161529) do
+ActiveRecord::Schema.define(version: 20180127110045) do
 
   create_table "taggings", force: :cascade do |t|
     t.integer "tag_id"
@@ -39,10 +39,10 @@ ActiveRecord::Schema.define(version: 20180126161529) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "title"
-    t.datetime "deadline"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.datetime "completed_at"
+    t.date "deadline"
   end
 
 end
