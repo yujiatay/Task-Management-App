@@ -52,7 +52,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '1.0.0'
 end
 
 gem 'acts-as-taggable-on'
